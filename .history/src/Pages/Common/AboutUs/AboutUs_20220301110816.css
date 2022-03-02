@@ -1,0 +1,8 @@
+.aboutUs {
+  display: flex;
+  justify-content: flex-start;
+  margin: 50px 30px;
+}
+.aboutUsImg {
+  width: 80%;
+}

@@ -1,0 +1,13 @@
+.ContractUs {
+  background-color: rgba(252, 80, 17, 0.877);
+  padding: 30px;
+}
+.ContractUs-Text {
+  padding: 40px 40px 0px 0px;
+  color: aliceblue;
+}
+.ContractUs-Text span {
+  color: rgb(65, 68, 70);
+}
+.ContractUs-form {
+}

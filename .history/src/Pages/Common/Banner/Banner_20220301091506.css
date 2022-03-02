@@ -1,0 +1,16 @@
+.banner {
+  background-size: 1300px 600px;
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-image: url("https://everestholidays.com.bd/wp-content/uploads/2019/06/Family-Tour-Packages.jpg");
+}
+.banner-text {
+  display: flex;
+  font-weight: bolder;
+  justify-content: center;
+  font-size: 4rem;
+  margin-left: 50px;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  color: rgb(247, 76, 14);
+}

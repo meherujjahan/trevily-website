@@ -1,0 +1,10 @@
+.ContractUs {
+  display: flex;
+  background-color: rgba(252, 80, 17, 0.877);
+}
+.ContractUs-Text {
+  margin-left: 100px;
+}
+.ContractUs-form {
+  margin-left: 250px;
+}

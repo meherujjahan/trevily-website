@@ -1,0 +1,19 @@
+.aboutUs {
+  display: flex;
+  justify-content: flex-start;
+  margin: 50px 100px;
+}
+.aboutUsImg {
+  width: 650px;
+}
+.aboutUsText {
+  padding-left: 50px;
+}
+.aboutUsText span {
+  color: rgb(247, 76, 14);
+}
+.btn {
+  margin-top: 30px;
+  display: flex;
+  margin: auto;
+}

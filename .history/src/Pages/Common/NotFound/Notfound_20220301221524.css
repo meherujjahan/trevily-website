@@ -1,0 +1,11 @@
+.notFoundImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 20%;
+}
+.notFoundBtn Link {
+  text-decoration: none;
+  color: aliceblue;
+}

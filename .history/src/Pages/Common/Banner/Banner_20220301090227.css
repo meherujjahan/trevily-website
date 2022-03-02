@@ -1,0 +1,15 @@
+.banner {
+  background-size: 1300px 600px;
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-image: url("https://us.123rf.com/450wm/potowizard/potowizard1502/potowizard150200011/36241088-travel-concept-thailand.jpg?ver=6");
+}
+.banner-text {
+  display: flex;
+  font-weight: bolder;
+  font-size: 10%;
+  margin-left: 50px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: rgb(247, 76, 14);
+}

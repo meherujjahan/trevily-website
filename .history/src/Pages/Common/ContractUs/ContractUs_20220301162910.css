@@ -1,0 +1,9 @@
+.ContractUs {
+  display: flex;
+}
+.ContractUs-Text {
+  margin-left: 100px;
+}
+.ContractUs-form {
+  margin-left: 250px;
+}
