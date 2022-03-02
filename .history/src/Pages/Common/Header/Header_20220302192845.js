@@ -29,10 +29,11 @@ const Header = () => {
             </Navbar.Text>
             {
               users?.email ? 
-              <Navbar.Text className='header-item'>
+              <div><Navbar.Text className='header-item'>
               <Button onClick={logOut}>LogOut</Button>
-              </Navbar.Text>
+              </Navbar.Text></div>
               
+             
               :
               <Navbar.Text className='header-item'>
             <Nav.Link as={Link} to='/login'>Login</Nav.Link>

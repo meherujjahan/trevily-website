@@ -30,9 +30,10 @@ const Header = () => {
             {
               users?.email ? 
               <Navbar.Text className='header-item'>
+              <p>name: {users.name}</p>
               <Button onClick={logOut}>LogOut</Button>
               </Navbar.Text>
-              
+             
               :
               <Navbar.Text className='header-item'>
             <Nav.Link as={Link} to='/login'>Login</Nav.Link>

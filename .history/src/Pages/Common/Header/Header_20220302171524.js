@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../Context/useAuth';
 import './Header.css';
@@ -25,7 +24,7 @@ const Header = () => {
             <Nav.Link as={HashLink} to='/aboutUs#aboutUs'>About Us</Nav.Link>
             </Navbar.Text>
             <Navbar.Text className='header-item'>
-            <Nav.Link as={HashLink} to='/contractUs#contractUs'>Contract Us</Nav.Link>
+            <Nav.Link as={LiHashLinknk} to='/contractUs#contractUs'>Contract Us</Nav.Link>
             </Navbar.Text>
             {
               users?.email ? 

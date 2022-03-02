@@ -29,7 +29,7 @@ function App() {
             <PrivateRoute path='/services'>
                 <Services/>
             </PrivateRoute>
-            <PrivateRoute path='/services/:id'>
+            <PrivateRoute path='/services/:${id}'>
                 <Services/>
             </PrivateRoute>
             <Route path='/AboutUs'>

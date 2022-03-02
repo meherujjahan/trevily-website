@@ -24,7 +24,7 @@ const Service = (props) => {
         <h5>Read More</h5>
           </Card.Text>
           <Card.Text>
-         <Nav.Link as={HashLink} to={`/services/${id}`} ><button>Booking</button></Nav.Link>
+         <Nav.Link as={HashLink} to='/services/:${id}' ><button>Booking</button></Nav.Link>
           </Card.Text>
           </div>
           

@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import './Service.css';
 
 const Service = (props) => {
-    const {id, img, place, price, desc, distance} = props.service;
+    const { img, place, price, desc, distance} = props.service;
     return (
         <Col>
         <Card className='service-card'>
@@ -24,7 +24,7 @@ const Service = (props) => {
         <h5>Read More</h5>
           </Card.Text>
           <Card.Text>
-         <Nav.Link as={HashLink} to={`/services/${id}`} ><button>Booking</button></Nav.Link>
+         <Nav.Link as={HashLink} to='/services' ><button>Booking</button></Nav.Link>
           </Card.Text>
           </div>
           

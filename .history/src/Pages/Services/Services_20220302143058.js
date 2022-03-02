@@ -7,7 +7,7 @@ import './Services.css';
 const Services = () => {
    const {services, id,} = useService();
     return (
-        <div className='services'>
+        <div className='container-fluid'>
             <Button className='btn' size="lg">Services</Button>
 
             <Row xs={1} md={2} className="g-4">

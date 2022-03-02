@@ -1,12 +1,11 @@
 import React from 'react';
-import { Card, Col, Nav } from 'react-bootstrap';
-import { HashLink } from 'react-router-hash-link';
+import { Card, Col } from 'react-bootstrap';
 import './Service.css';
 
 const Service = (props) => {
-    const {id, img, place, price, desc, distance} = props.service;
+    const { img, place, price, desc, distance} = props.service;
     return (
-        <Col>
+        <Col className='container'>
         <Card className='service-card'>
         <Card.Img className="serviceImg" variant="top" src={img} />
         <Card.Body className='place-name'>
@@ -24,7 +23,7 @@ const Service = (props) => {
         <h5>Read More</h5>
           </Card.Text>
           <Card.Text>
-         <Nav.Link as={HashLink} to={`/services/${id}`} ><button>Booking</button></Nav.Link>
+         <button>Booking</button>
           </Card.Text>
           </div>
           

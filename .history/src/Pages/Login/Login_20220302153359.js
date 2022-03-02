@@ -4,7 +4,7 @@ import useAuth from '../../Context/useAuth';
 
 
 const Login = () => {
-    const { signInWithGoogle } = useAuth();
+    const {signInWithGoogle} = useAuth();
     return (
         <div >
             <Card className='' style={{ width: '18rem', padding:'20px',  margin:'auto' }}>

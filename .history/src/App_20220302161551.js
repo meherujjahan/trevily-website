@@ -7,7 +7,6 @@ import Footer from "./Pages/Common/Footer/Footer";
 import Header from "./Pages/Common/Header/Header";
 import NotFound from './Pages/Common/NotFound/NotFound';
 import Login from "./Pages/Login/Login";
-import PrivateRoute from "./Pages/PrivateRoute/PrivateRoute";
 import Services from "./Pages/Services/Services";
 
 
@@ -26,12 +25,9 @@ function App() {
             <Route path='/home'>
                 <Home/>
             </Route>
-            <PrivateRoute path='/services'>
+            <Route path='/Services'>
                 <Services/>
-            </PrivateRoute>
-            <PrivateRoute path='/services/:id'>
-                <Services/>
-            </PrivateRoute>
+            </Route>
             <Route path='/AboutUs'>
                 <AboutUs/>
             </Route>

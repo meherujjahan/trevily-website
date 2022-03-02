@@ -17,7 +17,7 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
         .then(result =>{
             setUsers(result.user)
-        }).finally(()=> setLoading(false))
+        })
     }
 
   //logout
@@ -49,8 +49,7 @@ const useFirebase = () => {
         logOut,
         signInWithGoogle,
         users,
-        setUsers,
-        loading
+        setUsers
        }
     );
 };

@@ -32,7 +32,7 @@ const Header = () => {
               <Navbar.Text className='header-item'>
               <Button onClick={logOut}>LogOut</Button>
               </Navbar.Text>
-              
+              <p>name: {users.name}</p>
               :
               <Navbar.Text className='header-item'>
             <Nav.Link as={Link} to='/login'>Login</Nav.Link>

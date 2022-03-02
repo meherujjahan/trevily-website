@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../Context/useAuth';
 import './Header.css';
 
@@ -16,16 +15,16 @@ const Header = () => {
           <Navbar.Toggle />
           <Navbar.Collapse className=" justify-content-end ">
             <Navbar.Text className='header-item'>
-            <Nav.Link as={HashLink} to='/home#home'>Home</Nav.Link>
+            <Nav.Link as={Link} to='/home#home'>Home</Nav.Link>
             </Navbar.Text>
             <Navbar.Text className='header-item'>
-            <Nav.Link as={HashLink} to='/services#services'>Services</Nav.Link>
+            <Nav.Link as={Link} to='/services#services'>Services</Nav.Link>
             </Navbar.Text>
             <Navbar.Text className='header-item'>
-            <Nav.Link as={HashLink} to='/aboutUs#aboutUs'>About Us</Nav.Link>
+            <Nav.Link as={Link} to='/aboutUs#aboutUs'>About Us</Nav.Link>
             </Navbar.Text>
             <Navbar.Text className='header-item'>
-            <Nav.Link as={HashLink} to='/contractUs#contractUs'>Contract Us</Nav.Link>
+            <Nav.Link as={Link} to='/contractUs#contractUs'>Contract Us</Nav.Link>
             </Navbar.Text>
             {
               users?.email ? 
@@ -35,7 +34,7 @@ const Header = () => {
               
               :
               <Navbar.Text className='header-item'>
-            <Nav.Link as={Link} to='/login'>Login</Nav.Link>
+            <Nav.Link as={Link} to='/login#login'>Login</Nav.Link>
             </Navbar.Text>
             }
             

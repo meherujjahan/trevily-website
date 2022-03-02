@@ -4,41 +4,39 @@ import initializeAuthentication from "../Firebase/Firebase.init";
 
 initializeAuthentication()
 const useFirebase = () => {
-    const [users, setUsers] = useState({});
+    const [user, setUser] = useState({});
     const [error, setError] = useState({});
     const [loading, setLoading] = useState(true)
     const auth = getAuth();
-    //const provider = new GoogleAuthProvider();
+    const provider = new GoogleAuthProvider();
     //Manage user
     
     //Google LogIn
-    const signInWithGoogle = () =>{
-        const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
+    const googleSingIn = () =>{
+        signInWithPopup(auth, provider)
         .then(result =>{
-            setUsers(result.user)
-        }).finally(()=> setLoading(false))
+            const user = result.user;
+            console.log(user)
+        })
     }
 
   //logout
   const logOut = () => {
       setLoading(true)
+    const auth = getAuth();
     signOut(auth).then(() => {
       // Sign-out successful.
     }).finally(() => setLoading(false))
     .catch((error) => {
-      setError(error)
+      // An error happened.
     });
   }
   useEffect(()=>{
-   const unsubscribe= onAuthStateChanged(auth, (user) => {
-        if (user) {
-         
-        setUsers(user)
+   const unsubscribe= onAuthStateChanged(auth, (currentUser) => {
+        if (currentUser) {
+          const uid = currentUser.uid;
+        setUser(currentUser)
         } 
-        else{
-            setUsers({})
-        }
             setLoading(false)
       });
       return ()=>unsubscribe; 
@@ -47,10 +45,9 @@ const useFirebase = () => {
     return (
        {
         logOut,
-        signInWithGoogle,
-        users,
-        setUsers,
-        loading
+        googleSingIn,
+        user,
+        setUser
        }
     );
 };

@@ -1,8 +1,7 @@
 .service-card {
-  margin: 15px;
+  margin: 20px;
   padding: 15px;
-  border: none;
-  box-shadow: 7px 7px 7px 7px rgba(240, 67, 4, 0.363);
+  box-shadow: 7px 7px 7px rgba(240, 67, 4, 0.363);
 }
 .place-name b {
   color: rgb(117, 117, 115);
