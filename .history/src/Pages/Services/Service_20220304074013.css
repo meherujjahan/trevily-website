@@ -1,0 +1,23 @@
+.service-card {
+  margin: 15px;
+
+  border: none;
+  box-shadow: 7px 7px 7px 7px rgba(240, 67, 4, 0.363);
+}
+.place-name b {
+  color: rgb(117, 117, 115);
+}
+.place-name h3 {
+  color: rgb(247, 76, 14);
+}
+.place-name h5 {
+  color: rgb(247, 76, 14);
+}
+
+.place-name button {
+  display: flex;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  background-color: rgb(247, 76, 14);
+}

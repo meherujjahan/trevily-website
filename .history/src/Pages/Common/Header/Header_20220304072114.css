@@ -1,0 +1,15 @@
+.header {
+  background-color: rgb(59, 55, 52);
+}
+.header-item {
+  padding-left: 10px;
+  text-decoration: none;
+}
+.logo {
+  border-radius: 140px;
+  width: 80px;
+  height: 80px;
+}
+.header-item Nav.Link {
+  color: rgb(247, 76, 14);
+}

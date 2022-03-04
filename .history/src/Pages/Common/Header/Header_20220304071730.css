@@ -1,0 +1,12 @@
+.header {
+  background-color: rgb(247, 76, 14);
+}
+.header-item {
+  padding-left: 10px;
+  text-decoration: none;
+}
+.logo {
+  border-radius: 140px;
+  width: 100px;
+  height: 100px;
+}

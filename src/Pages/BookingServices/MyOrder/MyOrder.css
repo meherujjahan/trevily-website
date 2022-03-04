@@ -1,0 +1,6 @@
+.tr-edit {
+  border-bottom: 2px solid rgb(216, 211, 211);
+}
+.tr-edit td {
+  border-right: 2px solid rgb(216, 211, 211);
+}
